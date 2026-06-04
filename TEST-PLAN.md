@@ -9,6 +9,7 @@ This test plan helps evaluate whether the prompt produces a useful factual inven
 * Determine whether it handles missing records, negative evidence, duplicate evidence, and date logic correctly.
 * Determine whether it identifies reviewed vs. unreviewed files.
 * Determine whether source citations are specific enough to verify.
+* Determine whether optional spreadsheet exports are complete, filterable, sortable, source-cited, and limited to the requested scope.
 
 ## Test Cases
 
@@ -22,6 +23,8 @@ This test plan helps evaluate whether the prompt produces a useful factual inven
 8. Duplicate-heavy VA record scenario.
 9. Post-service record describing in-service event scenario.
 10. Prior VA decision/code sheet scenario.
+11. Spreadsheet export scenario, using the same reviewed records to confirm that each spreadsheet tab is populated with source-cited rows and stable headers.
+12. Targeted spreadsheet export scenario, such as an ENT-only export for rhinitis, sinusitis, obstructive sleep apnea, and tinnitus.
 
 ## Scoring Rubric
 
@@ -39,6 +42,8 @@ Use 0-2 scoring for each category:
 * missing records identification
 * legal/medical boundary compliance
 * completeness labeling
+* spreadsheet export structure, if requested
+* targeted export scope control, if requested
 * usability for a veteran
 
 Score definitions:
@@ -47,13 +52,23 @@ Score definitions:
 * 1 = partially successful / needs review
 * 2 = successful / acceptable
 
-Maximum score: 26 points.
+Maximum score without spreadsheet export: 26 points.
+
+Maximum score with spreadsheet export: 30 points.
 
 Suggested interpretation:
+
+Without spreadsheet export:
 
 * 23-26: acceptable for cautious use after human verification
 * 18-22: promising but needs prompt or workflow revision
 * 0-17: not acceptable without substantial revision
+
+With spreadsheet export:
+
+* 27-30: acceptable for cautious use after human verification
+* 21-26: promising but needs prompt or workflow revision
+* 0-20: not acceptable without substantial revision
 
 ## Fail Conditions
 
@@ -66,6 +81,10 @@ Any of the following should be treated as a failed or unsafe test, even if the n
 * fails to label a partial review as partial
 * treats VA treatment records as direct in-service evidence
 * ignores unreadable or unreviewed files
+* invents sample or fictional medical rows in a real spreadsheet export
+* omits source citations or Source IDs from factual spreadsheet rows
+* includes unrelated findings in a targeted spreadsheet export
+* creates spreadsheet headers that cannot reasonably be filtered or sorted
 
 ## Test Notes
 

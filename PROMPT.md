@@ -195,6 +195,119 @@ Record:
 * the strongest source, such as a specialist note, diagnostic test, pathology report, C&P exam, DBQ, or VA decision
 * any source that changes the status, timeline, severity, diagnosis, or record category
 
+## Spreadsheet Export Option
+
+If I ask for a spreadsheet export, create spreadsheet-ready tables after completing the normal evidence inventory and self-verification pass.
+
+Do not replace the normal report with the spreadsheet export unless I specifically ask for spreadsheet output only.
+
+Important spreadsheet rules:
+
+1. Do not invent example rows, fictional medical information, sample diagnoses, sample treatments, sample files, sample dates, sample providers, or sample source citations.
+2. Include only facts supported by uploaded records.
+3. If a field is not supported by uploaded records, use "not stated," "unclear from uploaded records," "no evidence identified in uploaded records," or "source location not specified."
+4. Every factual row must include a source citation or Source ID.
+5. Use stable column names so the output can be pasted into Excel, Google Sheets, Numbers, or another spreadsheet tool.
+6. Put one finding, symptom, test, treatment, source, or missing-record item per row.
+7. Do not merge unrelated findings into one row.
+8. Mark the spreadsheet export as complete or partial.
+9. If partial, list exactly what remains unreviewed.
+10. Do not include legal advice, medical diagnosis beyond what records directly state, causation analysis, VA rating prediction, nexus opinion, DBQ drafting, or claim recommendation.
+
+Recommended spreadsheet tabs:
+
+1. Review Scope
+2. Record Inventory
+3. Conditions and Findings
+4. Symptoms
+5. Medications, Treatments, Procedures, and Surgeries
+6. Diagnostic Tests and Objective Findings
+7. Negative, Normal, or Contradictory Evidence
+8. Possible Missing Records
+9. Source Index
+
+Each tab should be formatted so the header row can be frozen, filtered, and sorted by any column after export to Excel or Google Sheets.
+
+If the spreadsheet tool supports tables, filters, or filter views, use the full used range of each tab. Do not apply a default sort unless I ask for one.
+
+### Spreadsheet Tab Columns
+
+Use these columns unless I ask for a different format.
+
+Review Scope:
+
+| Review Batch | Date Reviewed | Files Reviewed | Files Not Reviewed Yet | Unreadable Files | Duplicate Files | Inventory Status | Notes |
+| ------------ | ------------- | -------------- | ---------------------- | ---------------- | --------------- | ---------------- | ----- |
+
+Record Inventory:
+
+| File Name | Record Type | Date Range | Source / Provider | Completeness / Readability | Reviewed? | Duplicate? | Notes |
+| --------- | ----------- | ---------- | ----------------- | -------------------------- | --------- | ---------- | ----- |
+
+Conditions and Findings:
+
+| Condition / Finding | Status | Record Systems Found | Earliest Located Source | Latest Located Source | Strongest Source | Date Relationship to Service | Service Connection Shown by VA Adjudication? | Key Source Citation | Notes |
+| ------------------- | ------ | -------------------- | ----------------------- | --------------------- | ---------------- | ---------------------------- | -------------------------------------------- | ------------------- | ----- |
+
+Symptoms:
+
+| Symptom | Date or Period Described | Earliest Located Source | Record-Created Date | Linked Condition If Stated | Association Stated? | Source Citation | Notes |
+| ------- | ------------------------ | ----------------------- | ------------------- | -------------------------- | ------------------- | --------------- | ----- |
+
+Medications, Treatments, Procedures, and Surgeries:
+
+| Item | Type | Start Date If Stated | End Date If Stated | Reason / Condition If Stated | Earliest Located Source | Source Citation | Notes |
+| ---- | ---- | -------------------- | ------------------ | ---------------------------- | ----------------------- | --------------- | ----- |
+
+Diagnostic Tests and Objective Findings:
+
+| Test / Finding | Test Date | Result Type | Key Finding | Related Condition If Stated | Source Citation | Notes |
+| -------------- | --------- | ----------- | ----------- | --------------------------- | --------------- | ----- |
+
+Negative, Normal, or Contradictory Evidence:
+
+| Finding | Type | Condition / Symptom Related To | Date | Source Citation | Contradicts Earlier Evidence? | Notes |
+| ------- | ---- | ------------------------------ | ---- | --------------- | ----------------------------- | ----- |
+
+Possible Missing Records:
+
+| Possible Missing Record | Why It May Help Complete Inventory | Mentioned By Source? | Source Citation | Required? | Notes |
+| ----------------------- | ---------------------------------- | -------------------- | --------------- | --------- | ----- |
+
+Source Index:
+
+| Source ID | File Name | Page / Section / Encounter | Date | Provider / Facility | Record Type | Notes |
+| --------- | --------- | -------------------------- | ---- | ------------------- | ----------- | ----- |
+
+### Spreadsheet Ordering Rules
+
+For the Conditions and Findings tab, order rows this way:
+
+1. VA-adjudicated service-connected conditions, only if explicitly shown in uploaded VA adjudication records
+2. Conditions or findings directly documented during active service
+3. Post-service records that describe service-period symptoms or events
+4. Conditions or findings first located after service
+5. Unclear, unreviewed, or source-limited findings
+
+Within each group, sort by earliest located source date when available.
+
+For Symptoms, Medications/Treatments, Diagnostic Tests, and Negative Evidence, order rows chronologically by the earliest located source date, record-created date, or test date when available.
+
+For Possible Missing Records, list records specifically mentioned or implied by reviewed sources first, then general records that may help complete the inventory.
+
+For Source Index, order by file review order, then by date or section within each file.
+
+### Targeted Spreadsheet Exports
+
+If I ask for a spreadsheet export limited to specific conditions, body systems, or topics, include only rows directly related to that target.
+
+Examples:
+
+* If I ask for an ENT-only export for rhinitis, sinusitis, obstructive sleep apnea, and tinnitus, include only rows directly related to those conditions.
+* Do not include unrelated conditions, medications, symptoms, tests, or records unless they are directly relevant to the requested target or needed to explain review scope.
+* If a file was reviewed but had no target-relevant findings, include it in Review Scope or Record Inventory as "reviewed; no target-relevant findings identified" rather than adding unrelated medical findings.
+* If relevance is unclear, use "unclear from uploaded records" and explain the source limitation.
+
 ## Output Format
 
 # 1. Review Scope

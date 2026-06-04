@@ -70,7 +70,30 @@ See [SETUP-GUIDE.md](SETUP-GUIDE.md) for setup guidance.
 3. Upload records into that same Project or workspace.
 4. Ask the AI to inventory the uploaded records.
 5. Review the output against the original records.
-6. Treat all output as a draft evidence inventory, not as advice or a claim recommendation.
+6. If useful, ask for a spreadsheet export after the normal inventory is complete.
+7. Treat all output as a draft evidence inventory, not as advice or a claim recommendation.
+
+## Spreadsheet Export
+
+The prompt includes an optional spreadsheet export mode for turning the evidence inventory into spreadsheet-ready tabs that can be pasted into Excel, Google Sheets, Numbers, or another spreadsheet tool.
+
+The recommended tabs are:
+
+* Review Scope
+* Record Inventory
+* Conditions and Findings
+* Symptoms
+* Medications, Treatments, Procedures, and Surgeries
+* Diagnostic Tests and Objective Findings
+* Negative, Normal, or Contradictory Evidence
+* Possible Missing Records
+* Source Index
+
+The spreadsheet export is intended for filtering, sorting, source-checking, and tracking evidence gaps. It is not a claim strategy worksheet, rating calculator, nexus tool, or medical opinion.
+
+Real spreadsheet exports must not include fictional examples, sample medical facts, or invented rows. Every factual row should come from uploaded records and include a source citation or Source ID.
+
+If a user asks for a targeted export, such as an ENT-only export for rhinitis, sinusitis, obstructive sleep apnea, and tinnitus, the export should include only rows directly related to the requested target conditions.
 
 ## Recommended Records to Upload
 
